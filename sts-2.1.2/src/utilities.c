@@ -2,11 +2,9 @@
 U T I L I T I E S
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cstdlib>
-#include <cmath>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 #include <time.h>
 #include "../include/externs.h"
 #include "../include/utilities.h"

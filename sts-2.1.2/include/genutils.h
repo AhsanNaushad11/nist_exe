@@ -2,12 +2,9 @@
 #ifndef _GENUTILS_H_
 #define _GENUTILS_H_
 
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "config.h"
 
 typedef struct _MP_struct {

@@ -5,4 +5,3 @@ my_random_data.bin
 0
 1
 1
-

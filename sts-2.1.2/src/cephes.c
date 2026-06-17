@@ -1,7 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cmath>
+#include <stdio.h>
+#include <math.h>
 #include "../include/cephes.h"
 
 static const double	rel_error = 1E-12;

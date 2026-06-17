@@ -1,10 +1,7 @@
-#include <iostream>
-#include <fstream>
-#include <cstdio>
-#include <cstdlib>
-#include <cmath>
-#include <cstring>
-#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
 #include "../include/externs.h"
 #include "../include/utilities.h"
 #include "../include/cephes.h"  
@@ -125,13 +122,8 @@ NonOverlappingTemplateMatchings(int m, int n)
 				fprintf(stats[TEST_NONPERIODIC], "\t\tWARNING:  P_VALUE IS OUT OF RANGE.\n");
 
 			fprintf(stats[TEST_NONPERIODIC], "%9.6f %f %s %3d\n", chi2, p_value, p_value < ALPHA ? "FAILURE" : "SUCCESS", jj);
-			if ( SKIP > 1 ) {
-				for ( int skipCount = 0; skipCount < (SKIP-1); skipCount++ ) {
-					for ( k=0; k<m; k++ ) {
-						fscanf(fp, "%d", &bit);
-					}
-				}
-			}
+			if ( SKIP > 1 )
+				fseek(fp, (long)(SKIP-1)*2*m, SEEK_CUR);
 			fprintf(results[TEST_NONPERIODIC], "%f\n", p_value); fflush(results[TEST_NONPERIODIC]);
 		}
 	}
