@@ -1,4 +1,4 @@
-/* --------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
    Title       :  The NIST Statistical Test Suite
 
    Date        :  December 1999
@@ -42,30 +42,32 @@
                   of the supporting documentation for such software.
    -------------------------------------------------------------------------- */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <string.h>
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cmath>
+#include <cstring>
 #include "../include/decls.h"
 #include "../include/cephes.h"  
 #include "../include/utilities.h"
 
 void	partitionResultFile(int numOfFiles, int numOfSequences, int option, int testNameID);
 void	postProcessResults(int option);
-int		cmp(const double *a, const double *b);
+int		cmp(const void *a, const void *b);
 int		computeMetrics(char *s, int test);
 
-int
-main(int argc, char *argv[])
+extern "C" __declspec(dllexport) int
+nist_main(int argc, char *argv[])
 {
+	freopen("input.txt", "r", stdin);
 	int		i;
 	int		option;			/* TEMPLATE LENGTH/STREAM LENGTH/GENERATOR*/
 	char	*streamFile;	/* STREAM FILENAME     */
 	
 
 	if ( argc != 2 ) {
-		printf("Usage: %s <stream length>\n", argv[0]);
-		printf("   <stream length> is the length of the individual bit stream(s) to be processed\n");
+		std::cout << "Usage: " << argv[0] << " <stream length>\n";
+		std::cout << "   <stream length> is the length of the individual bit stream(s) to be processed\n";
 		return 0;
 	}
 
@@ -128,8 +130,8 @@ partitionResultFile(int numOfFiles, int numOfSequences, int option, int testName
 	sprintf(resultsDir, "experiments/%s/%s/results.txt", generatorDir[option], testNames[testNameID]);
 	
 	if ( (fp[numOfFiles] = fopen(resultsDir, "r")) == NULL ) {
-		printf("%s", resultsDir);
-		printf(" -- file not found. Exiting program.\n");
+		std::cout << resultsDir;
+		std::cout << " -- file not found. Exiting program.\n";
 		exit(-1);
 	}
 	
@@ -147,8 +149,8 @@ partitionResultFile(int numOfFiles, int numOfSequences, int option, int testName
 		m++;
 	for ( i=0; i<numOfFiles; i++ ) {
 		if ( (fp[i] = fopen(s[i], "w")) == NULL ) {
-			printf("%s", s[i]);
-			printf(" -- file not found. Exiting program.\n");
+			std::cout << s[i];
+			std::cout << " -- file not found. Exiting program.\n";
 			exit(-1);
 		}
 		fclose(fp[i]);
@@ -187,11 +189,13 @@ partitionResultFile(int numOfFiles, int numOfSequences, int option, int testName
 }
 
 int
-cmp(const double *a, const double *b)
+cmp(const void *a, const void *b)
 {
-	if ( *a < *b )
+	const double *da = (const double *)a;
+	const double *db = (const double *)b;
+	if ( *da < *db )
 		return -1;
-	if ( *a == *b )
+	if ( *da == *db )
 		return 0;
 	return 1;
 }
@@ -353,7 +357,7 @@ computeMetrics(char *s, int test)
 	
 	/* Compute Metric 2: Histogram */
 	
-	qsort((void *)A, sampleSize, sizeof(double), (void *)cmp);
+	qsort((void *)A, sampleSize, sizeof(double), cmp);
 	for ( j=0; j<sampleSize; j++ ) {
 		pos = (int)floor(A[j]*10);
 		if ( pos == 10 )

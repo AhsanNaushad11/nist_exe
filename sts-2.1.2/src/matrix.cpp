@@ -1,5 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+#include <cstdlib>
 #include "../include/externs.h"
 #include "../include/matrix.h"
 
@@ -133,7 +135,7 @@ create_matrix(int M, int Q)
 	}
 	else {
 		for ( i=0; i<M; i++ ) {
-			if ( (matrix[i] = calloc(Q, sizeof(BitSequence))) == NULL ) {
+			if ( (matrix[i] = (BitSequence *)calloc(Q, sizeof(BitSequence))) == NULL ) {
 				printf("ERROR IN FUNCTION create_matrix: Insufficient memory for %dx%d matrix.\n", M, M);
 
 				return NULL;

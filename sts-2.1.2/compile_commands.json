@@ -1,0 +1,112 @@
+﻿[
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/approximateEntropy.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/approximateEntropy.cpp -o obj/approximateEntropy.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/assess.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/assess.cpp -o obj/assess.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/blockFrequency.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/blockFrequency.cpp -o obj/blockFrequency.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/cephes.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/cephes.cpp -o obj/cephes.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/cusum.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/cusum.cpp -o obj/cusum.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/dfft.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/dfft.cpp -o obj/dfft.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/discreteFourierTransform.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/discreteFourierTransform.cpp -o obj/discreteFourierTransform.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/frequency.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/frequency.cpp -o obj/frequency.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/generators.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/generators.cpp -o obj/generators.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/genutils.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/genutils.cpp -o obj/genutils.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/linearComplexity.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/linearComplexity.cpp -o obj/linearComplexity.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/longestRunOfOnes.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/longestRunOfOnes.cpp -o obj/longestRunOfOnes.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/matrix.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/matrix.cpp -o obj/matrix.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/nonOverlappingTemplateMatchings.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/nonOverlappingTemplateMatchings.cpp -o obj/nonOverlappingTemplateMatchings.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/overlappingTemplateMatchings.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/overlappingTemplateMatchings.cpp -o obj/overlappingTemplateMatchings.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/randomExcursions.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/randomExcursions.cpp -o obj/randomExcursions.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/randomExcursionsVariant.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/randomExcursionsVariant.cpp -o obj/randomExcursionsVariant.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/rank.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/rank.cpp -o obj/rank.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/runs.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/runs.cpp -o obj/runs.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/serial.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/serial.cpp -o obj/serial.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/universal.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/universal.cpp -o obj/universal.o"
+    },
+    {
+        "directory":  "c:/my_projects/nist_exe/sts-2.1.2",
+        "file":  "c:/my_projects/nist_exe/sts-2.1.2/src/utilities.cpp",
+        "command":  "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe -c -Wall -Ic:/my_projects/nist_exe/sts-2.1.2/include c:/my_projects/nist_exe/sts-2.1.2/src/utilities.cpp -o obj/utilities.o"
+    }
+]

@@ -1,0 +1,10 @@
+-IC:/Users/AhsanBinNaushad/tools/mingw64/include/c++/16.1.0
+-IC:/Users/AhsanBinNaushad/tools/mingw64/include/c++/16.1.0/x86_64-w64-mingw32
+-IC:/Users/AhsanBinNaushad/tools/mingw64/include/c++/16.1.0/backward
+-IC:/Users/AhsanBinNaushad/tools/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include
+-IC:/Users/AhsanBinNaushad/tools/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
+-IC:/Users/AhsanBinNaushad/tools/mingw64/x86_64-w64-mingw32/include
+-D__MINGW32__
+-D__MINGW64__
+-std=c++17
+-Wall

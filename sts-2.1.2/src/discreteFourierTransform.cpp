@@ -1,10 +1,13 @@
-#include <stdio.h>
-#include <math.h>
-#include <string.h>
-#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+#include <cmath>
+#include <cstring>
+#include <string>
+#include <cstdlib>
+#include <vector>
 #include "../include/externs.h"
 #include "../include/utilities.h"
-#include "../include/cephes.h"
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
          D I S C R E T E  F O U R I E R  T R A N S F O R M  T E S T 
@@ -16,7 +19,8 @@ void
 DiscreteFourierTransform(int n)
 {
 	double	p_value, upperBound, percentile, N_l, N_o, d, *m = NULL, *X = NULL, *wsave = NULL;
-	int		i, count, ifac[15];
+	int		i, count;
+	std::vector<int> ifac(100);
 
 	if ( ((X = (double*) calloc(n,sizeof(double))) == NULL) ||
 		 ((wsave = (double *)calloc(2*n,sizeof(double))) == NULL) ||
@@ -33,8 +37,8 @@ DiscreteFourierTransform(int n)
 	for ( i=0; i<n; i++ )
 		X[i] = 2*(int)epsilon[i] - 1;
 	
-	__ogg_fdrffti(n, wsave, ifac);		/* INITIALIZE WORK ARRAYS */
-	__ogg_fdrfftf(n, X, wsave, ifac);	/* APPLY FORWARD FFT */
+	__ogg_fdrffti(n, wsave, ifac.data());		/* INITIALIZE WORK ARRAYS */
+	__ogg_fdrfftf(n, X, wsave, ifac.data());	/* APPLY FORWARD FFT */
 	
 	m[0] = sqrt(X[0]*X[0]);	    /* COMPUTE MAGNITUDE */
 	

@@ -1,7 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+#include <cmath>
 #include <time.h>
 #include "../include/externs.h"
 #include "../include/utilities.h"

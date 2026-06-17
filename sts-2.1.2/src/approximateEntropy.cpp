@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <math.h>
-#include <string.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cmath>
+#include <cstring>
+#include <cstdlib>
 #include "../include/externs.h"
 #include "../include/utilities.h"
 #include "../include/cephes.h"  

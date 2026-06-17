@@ -1,4 +1,4 @@
-CC = gcc
+CC = g++
 GCCFLAGS = -c -Wall
 ROOTDIR = .
 SRCDIR = $(ROOTDIR)/src
@@ -18,75 +18,75 @@ OBJ = $(OBJDIR)/assess.o $(OBJDIR)/frequency.o $(OBJDIR)/blockFrequency.o \
 assess.dll: $(OBJ)
 	$(CC) -shared -o $@ $(OBJ) -lm
 
-$(OBJDIR)/assess.o: $(SRCDIR)/assess.c defs.h decls.h utilities.h
-	$(CC) -o $@ -c $(SRCDIR)/assess.c
+$(OBJDIR)/assess.o: $(SRCDIR)/assess.cpp defs.h decls.h utilities.h
+	$(CC) -o $@ -c $(SRCDIR)/assess.cpp
 
-$(OBJDIR)/frequency.o: $(SRCDIR)/frequency.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/frequency.c
+$(OBJDIR)/frequency.o: $(SRCDIR)/frequency.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/frequency.cpp
 
-$(OBJDIR)/blockFrequency.o: $(SRCDIR)/blockFrequency.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/blockFrequency.c
+$(OBJDIR)/blockFrequency.o: $(SRCDIR)/blockFrequency.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/blockFrequency.cpp
 
-$(OBJDIR)/cusum.o: $(SRCDIR)/cusum.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/cusum.c
+$(OBJDIR)/cusum.o: $(SRCDIR)/cusum.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/cusum.cpp
 
-$(OBJDIR)/runs.o: $(SRCDIR)/runs.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/runs.c
+$(OBJDIR)/runs.o: $(SRCDIR)/runs.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/runs.cpp
 
-$(OBJDIR)/longestRunOfOnes.o: $(SRCDIR)/longestRunOfOnes.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/longestRunOfOnes.c
+$(OBJDIR)/longestRunOfOnes.o: $(SRCDIR)/longestRunOfOnes.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/longestRunOfOnes.cpp
 
-$(OBJDIR)/rank.o: $(SRCDIR)/rank.c defs.h externs.h matrix.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/rank.c
+$(OBJDIR)/rank.o: $(SRCDIR)/rank.cpp defs.h externs.h matrix.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/rank.cpp
 
-$(OBJDIR)/discreteFourierTransform.o: $(SRCDIR)/discreteFourierTransform.c \
+$(OBJDIR)/discreteFourierTransform.o: $(SRCDIR)/discreteFourierTransform.cpp \
         defs.h externs.h utilities.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/discreteFourierTransform.c
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/discreteFourierTransform.cpp
 
 $(OBJDIR)/nonOverlappingTemplateMatchings.o: \
-        $(SRCDIR)/nonOverlappingTemplateMatchings.c defs.h externs.h utilities.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/nonOverlappingTemplateMatchings.c
+        $(SRCDIR)/nonOverlappingTemplateMatchings.cpp defs.h externs.h utilities.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/nonOverlappingTemplateMatchings.cpp
 
 $(OBJDIR)/overlappingTemplateMatchings.o: \
-        $(SRCDIR)/overlappingTemplateMatchings.c defs.h externs.h utilities.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/overlappingTemplateMatchings.c
+        $(SRCDIR)/overlappingTemplateMatchings.cpp defs.h externs.h utilities.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/overlappingTemplateMatchings.cpp
 
-$(OBJDIR)/universal.o: $(SRCDIR)/universal.c defs.h externs.h utilities.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/universal.c
+$(OBJDIR)/universal.o: $(SRCDIR)/universal.cpp defs.h externs.h utilities.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/universal.cpp
 
-$(OBJDIR)/approximateEntropy.o: $(SRCDIR)/approximateEntropy.c defs.h externs.h utilities.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/approximateEntropy.c
+$(OBJDIR)/approximateEntropy.o: $(SRCDIR)/approximateEntropy.cpp defs.h externs.h utilities.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/approximateEntropy.cpp
 
-$(OBJDIR)/randomExcursions.o: $(SRCDIR)/randomExcursions.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/randomExcursions.c
+$(OBJDIR)/randomExcursions.o: $(SRCDIR)/randomExcursions.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/randomExcursions.cpp
 
-$(OBJDIR)/randomExcursionsVariant.o: $(SRCDIR)/randomExcursionsVariant.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/randomExcursionsVariant.c
+$(OBJDIR)/randomExcursionsVariant.o: $(SRCDIR)/randomExcursionsVariant.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/randomExcursionsVariant.cpp
 
-$(OBJDIR)/serial.o: $(SRCDIR)/serial.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/serial.c
+$(OBJDIR)/serial.o: $(SRCDIR)/serial.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/serial.cpp
 
-$(OBJDIR)/linearComplexity.o: $(SRCDIR)/linearComplexity.c defs.h externs.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/linearComplexity.c
+$(OBJDIR)/linearComplexity.o: $(SRCDIR)/linearComplexity.cpp defs.h externs.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/linearComplexity.cpp
 
-$(OBJDIR)/dfft.o: $(SRCDIR)/dfft.c
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/dfft.c
+$(OBJDIR)/dfft.o: $(SRCDIR)/dfft.cpp
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/dfft.cpp
 
-$(OBJDIR)/matrix.o: $(SRCDIR)/matrix.c defs.h externs.h utilities.h matrix.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/matrix.c
+$(OBJDIR)/matrix.o: $(SRCDIR)/matrix.cpp defs.h externs.h utilities.h matrix.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/matrix.cpp
 
-$(OBJDIR)/genutils.o: $(SRCDIR)/genutils.c config.h genutils.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/genutils.c
+$(OBJDIR)/genutils.o: $(SRCDIR)/genutils.cpp config.h genutils.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/genutils.cpp
 
-$(OBJDIR)/cephes.o: $(SRCDIR)/cephes.c cephes.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/cephes.c
+$(OBJDIR)/cephes.o: $(SRCDIR)/cephes.cpp cephes.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/cephes.cpp
 
-$(OBJDIR)/utilities.o: $(SRCDIR)/utilities.c defs.h externs.h utilities.h config.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/utilities.c
+$(OBJDIR)/utilities.o: $(SRCDIR)/utilities.cpp defs.h externs.h utilities.h config.h
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/utilities.cpp
 
-$(OBJDIR)/generators.o: $(SRCDIR)/generators.c defs.h externs.h utilities.h \
+$(OBJDIR)/generators.o: $(SRCDIR)/generators.cpp defs.h externs.h utilities.h \
         config.h generators.h
-	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/generators.c
+	$(CC) -o $@ $(GCCFLAGS) $(SRCDIR)/generators.cpp
 
 clean:
 	rm -f assess $(OBJDIR)/*.o
