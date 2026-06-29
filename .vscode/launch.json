@@ -7,6 +7,15 @@
             "request": "launch",
             "script": "${workspaceFolder}/run_nist.ps1",
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Java: Run Output.java (raw 2MB)",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "Output",
+            "vmArgs": "--enable-preview",
+            "args": "scaledInt 20000 100 900000 scaled_int.txt",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }

@@ -1,7 +1,17 @@
 {
+    "java.jdt.ls.java.home": "C:/Users/AhsanBinNaushad/tools/jdk-24.0.2",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-24",
+            "path": "C:/Users/AhsanBinNaushad/tools/jdk-24.0.2",
+            "default": true
+        }
+    ],
     "java.project.referencedLibraries": [
         "fortuna-2.1.jar"
     ],
+    "java.debug.settings.vmArgs": "--enable-preview",
+    "java.compile.nullAnalysisMode": "disabled",
     "C_Cpp.default.compilerPath": "C:/Users/AhsanBinNaushad/tools/mingw64/bin/g++.exe",
     "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
     "C_Cpp.default.cppStandard": "c++17",
