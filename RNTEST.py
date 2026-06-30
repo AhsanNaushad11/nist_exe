@@ -3,16 +3,23 @@ import math
 import datetime
 
 def runs_test(data):
-    # Runs up/down test
+    # Runs up/down test (Turning Points)
     if len(data) < 3:
         return 0, 0
         
     runs = 1
+    direction = 0 # 1 for up, -1 for down
+    
     for i in range(1, len(data)):
-        if data[i] != data[i-1]:
-            runs += 1
+        if data[i] > data[i-1]:
+            if direction == -1:
+                runs += 1
+            direction = 1
+        elif data[i] < data[i-1]:
+            if direction == 1:
+                runs += 1
+            direction = -1
             
-    # Calculate expected runs and variance for a truly random sequence
     n = len(data)
     expected_runs = ((2 * n) - 1) / 3.0
     variance = ((16 * n) - 29) / 90.0
@@ -23,7 +30,6 @@ def runs_test(data):
     z_score = (runs - expected_runs) / math.sqrt(variance)
     
     # Calculate confidence level (p-value)
-    # Using the normal CDF
     p_value = math.erfc(abs(z_score) / math.sqrt(2))
     return z_score, p_value * 100
 
